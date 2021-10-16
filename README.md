@@ -46,14 +46,14 @@ const config = defaults.__get__('config');
 config.devtool = 'inline-source-map';
 ```
 
-ビルドスクリプトから`config`オブジェクトを取り出して、`devtool`プロパティーを上書きします。
+ビルドスクリプトから`config`オブジェクトを取り出して、`devtool`プロパティーを`inline-source-map`に変更します。(変更前は`cheap-module-source-map`がセットされています)
 
 4. ビルドを行い結果を確認
 ```
 npm run build-inlinemap
 ```
 
-`～.js.map` ファイルが生成されません。
+buildフォルダに`～.js.map` ファイルが生成されません。
 
 ![img1](./img/img1.png)
 
